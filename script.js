@@ -31,7 +31,7 @@ function fetchGoogleImage(searchTerm) {
 
     const apiKey = 'AIzaSyAXFVj8hbJYaIiqPL6E8Cv0w3Zj0R9FI0s';
     const searchEngineId = 'd5af8dade41574f17';
-    const url = `https://www.googleapis.com/customsearch/v1?key=${apiKey}&cx=${searchEngineId}&searchType=image&imgSize=large&q=${encodeURIComponent(searchTerm)}`;
+    const url = `https://www.googleapis.com/customsearch/v1?key=${apiKey}&cx=${searchEngineId}&searchType=image&imgSize=xxlarge&q=${encodeURIComponent(searchTerm)}`;
 
   
     fetch(url)
