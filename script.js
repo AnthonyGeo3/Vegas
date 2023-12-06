@@ -22,6 +22,8 @@ function fetchGoogleImage(searchTerm) {
     const today = new Date().toDateString();
     const storedDate = localStorage.getItem('backgroundSetDate');
     const storedImageUrl = localStorage.getItem('backgroundImageUrl');
+    console.log('Stored Image URL:', storedImageUrl); // Add this line to debug
+
 
     if (storedDate === today && storedImageUrl) {
         // Use the stored image URL
