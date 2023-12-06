@@ -22,8 +22,6 @@ function fetchGoogleImage(searchTerm) {
     const today = new Date().toDateString();
     const storedDate = localStorage.getItem('backgroundSetDate');
     const storedImageUrl = localStorage.getItem('backgroundImageUrl');
-    console.log('Stored Image URL:', storedImageUrl); // Add this line to debug
-
 
     if (storedDate === today && storedImageUrl) {
         // Use the stored image URL
@@ -100,8 +98,9 @@ function updateBackground() {
 const lastBackgroundUpdate = localStorage.getItem('backgroundSetDate');
 const today = new Date().toDateString();
 if (lastBackgroundUpdate !== today) {
-  updateBackground();
+    updateBackground();
+  } else {
+    // Set the background image from the stored URL
+    const storedImageUrl = localStorage.getItem('backgroundImageUrl');
+    document.body.style.backgroundImage = `url('${storedImageUrl}')`;
 }
-
-//  const randomTerm = searchTerms[Math,floor(Math.random()*searchTerms.length)];
-// fetchGoogleImage(randomTerm);
