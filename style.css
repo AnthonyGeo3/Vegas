@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #03131A;
+    color: #5b6d44;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+button {
+    background-color: #D4FF9D;
+    color: #03131A;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px; /* Slight rounding of corners for a modern look */
+}
+
+button:hover {
+    background-color: #8FD6E8;
+}
+
+/* Adjust the font size of the timer to match the heading */
+#timeDisplay {
+    font-size: 2em; /* This sets the font size relative to the current font size of the body. Adjust as needed. */
+    margin: 20px 0; /* This adds more vertical space around the timer display. Adjust as needed. */
+}
+
+/* Add more padding below the controls */
+.controls {
+    margin-bottom: 20px; /* Adjust the space below the button controls as desired */
+}
+
+/* Adjust the spacing around the 'Show Log' button if needed */
+#viewLogButton {
+    margin-top: 20px; /* This adds space above the 'Show Log' button. Adjust as needed. */
+}
+
+/* Style for individual log entries */
+.log-entry {
+    background-color: #06283D; /* Darker background for each entry */
+    color: #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners for each log entry */
+}
+
+/* Style for log details within the entry */
+.log-details {
+    margin-bottom: 5px;
+}
+
+/* Styles for buttons within log entries */
+.log-entry button {
+    font-size: 14px; /* Smaller font size for buttons within log entries */
+    margin: 2px; /* Smaller margin for tighter layout */
+    padding: 8px 16px; /* Adjust padding for buttons within log entries */
+}
+
+/* Style for the dropdown within the log entry */
+.log-category select {
+    padding: 5px 10px;
+    margin-top: 5px; /* Add some space above the dropdown */
+    background: #fff; /* Light background for the dropdown */
+    color: #03131A; /* Text color for the dropdown options */
+    border: 1px solid #D4FF9D; /* Border color to match your button style */
+    border-radius: 5px; /* Rounded corners for the dropdown */
+    font-size: 14px; /* Font size to match other buttons */
+}
+
+/* Adjust the styling for the category span to display inline with buttons */
+.log-category {
+    display: inline-block; /* Align with buttons */
+    margin-right: 4px; /* Consistent spacing with buttons */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    button {
+        padding: 15px 30px; /* Larger padding for easier touch */
+        font-size: 18px; /* Slightly larger font for readability */
+    }
+
+    /* Specific styles for log entries on mobile */
+    .log-entry {
+        font-size: 14px; /* Smaller font size for the log text */
+    }
+
+    .log-entry button {
+        font-size: 12px; /* Even smaller font size for buttons on mobile */
+    }
+}
