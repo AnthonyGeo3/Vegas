@@ -8,7 +8,7 @@ function updateCountdown() {
     const minsLeft = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
     const secsLeft = Math.floor((difference % (1000 * 60)) / 1000);
 
-    document.getElementById('countdown').innerText = daysLeft + " days " + hoursLeft + " hours " + minsLeft + " minutes " + secsLeft + " seconds until Las Vegas!";
+    document.getElementById('countdown').innerHTML = daysLeft + " days " + hoursLeft + " hours " + minsLeft + " minutes " + secsLeft + " seconds <br> until Las Vegas!";
 }
 
 // Update the countdown every second
