@@ -29,7 +29,7 @@ function fetchGoogleImage(searchTerm) {
         return; // No need to fetch a new image
     }
 
-    const apiKey = 'YAIzaSyAXFVj8hbJYaIiqPL6E8Cv0w3Zj0R9FI0s';
+    const apiKey = 'AIzaSyAXFVj8hbJYaIiqPL6E8Cv0w3Zj0R9FI0s';
     const searchEngineId = 'd5af8dade41574f17';
     const url = `https://www.googleapis.com/customsearch/v1?key=${apiKey}&cx=${searchEngineId}&searchType=image&q=${encodeURIComponent(searchTerm)}`;
   
