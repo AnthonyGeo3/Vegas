@@ -16,3 +16,20 @@ setInterval(updateCountdown, 1000);
 
 // Initial call
 updateCountdown();
+
+function fetchGoogleImage(searchTerm) {
+    const apiKey = 'YAIzaSyAXFVj8hbJYaIiqPL6E8Cv0w3Zj0R9FI0s';
+    const searchEngineId = 'd5af8dade41574f17';
+    const url = `https://www.googleapis.com/customsearch/v1?key=${apiKey}&cx=${searchEngineId}&searchType=image&q=${encodeURIComponent(searchTerm)}`;
+  
+    fetch(url)
+      .then(response => response.json())
+      .then(data => {
+        // Logic to handle the response and extract the image URL
+        const imageUrl = data.items[0].link;
+        document.body.style.backgroundImage = `url('${imageUrl}')`;
+      })
+      .catch(error => {
+        console.error('Error fetching image:', error);
+      });
+  }
