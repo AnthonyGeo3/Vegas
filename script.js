@@ -87,7 +87,9 @@ function updateBackground() {
         'The Venetian Madame Tussauds',
         'Las Vegas Sportsbooks',
         'The Venetian Canyon Ranch Spa',
-        'Las Vegas Fireworks'
+        'Las Vegas Fireworks',
+        'Las Vegas Sphere',
+        'Team America'
     ]
   const randomIndex = Math.floor(Math.random() * searchTerms.length);
   const randomTerm = searchTerms[randomIndex];
